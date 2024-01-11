@@ -1,6 +1,6 @@
 const inputBox = document.getElementById('password')
 const genBtn = document.getElementById('generate-btn')
-const icon = document.getElementById('icn')
+const icon = document.getElementById('icon')
 inputBox.value = ''
 inputBox.disabled = true
 const map = new Map
