@@ -1,0 +1,28 @@
+let scr = 0
+score.innerHTML = `${scr}/${question.length}`
+
+for (let i = 0; i < btns.length; i++) {
+    btns[i].innerHTML = question[0].options[i].text
+    quizQuestion.innerHTML = question[0].qns
+    btns[i].addEventListener('click',(event)=>{
+        if(question[0].options[i].correct){
+            console.log('correct');
+            scr++
+            btns[i].style.backgroundColor = '#77DD76'
+            score.innerHTML = `${scr}/${question.length}`
+            for (let j = 0; j < btns.length; j++) {
+                btns[j].disabled = true
+                btns[j].style.cursor = 'not-allowed'
+            }
+            btns[i].style.color = 'black'
+        }else{
+            btns[i].style.backgroundColor = '#FF6962'
+            btns[i].style.color = 'black'
+            for (let j = 0; j < btns.length; j++) {
+                btns[j].disabled = true
+                btns[j].style.cursor = 'not-allowed'
+            }
+            console.log('wrong');
+        }
+    })
+}
