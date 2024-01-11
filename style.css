@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(36, 78, 136);
+    color: rgb(2, 0, 99);
     padding:0 0 8px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.218);
 }
@@ -40,7 +40,7 @@
 #question{
     margin: 0.7em 0 0.7em 0;
     font-weight: bold;
-    color: rgb(36, 78, 136);
+    color: rgb(0, 19, 125);
     margin-left: 5px;
     font-size: 1em;
 }
